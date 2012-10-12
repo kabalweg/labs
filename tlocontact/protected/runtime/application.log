@@ -1,0 +1,431 @@
+2012/05/31 15:52:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "gii".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('gii')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('gii')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/gii')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\labs\tlocontact\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/labs/tlocontact/index.php/site/gii
+---
+2012/05/31 15:52:48 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'testdrive'' in C:\xampp\htdocs\yii\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\xampp\htdocs\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 C:\xampp\htdocs\yii\framework\base\CModule.php(104): CModule->getComponent('db')
+#4 C:\xampp\htdocs\yii\framework\gii\generators\model\ModelCode.php(54): CModule->__get('db')
+#5 C:\xampp\htdocs\yii\framework\web\CFormModel.php(40): ModelCode->init()
+#6 C:\xampp\htdocs\yii\framework\gii\CCodeGenerator.php(152): CFormModel->__construct()
+#7 C:\xampp\htdocs\yii\framework\gii\CCodeGenerator.php(64): CCodeGenerator->prepare()
+#8 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): CCodeGenerator->actionIndex()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gii/model')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\labs\tlocontact\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/labs/tlocontact/index.php/gii/model
+HTTP_REFERER=http://localhost/labs/tlocontact/index.php/gii
+---
+2012/05/31 16:04:16 [error] [exception.CException] exception 'CException' with message 'CompanyController cannot find the requested view "index".' in C:\xampp\htdocs\yii\framework\web\CController.php:879
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('index', NULL, true)
+#1 C:\xampp\htdocs\labs\tlocontact\protected\controllers\CompanyController.php(7): CController->render('index')
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): CompanyController->actionIndex()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('index')
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('company/index')
+#8 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\labs\tlocontact\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/labs/tlocontact/index.php/company/index
+HTTP_REFERER=http://localhost/labs/tlocontact/index.php/contact/index
+---
+2012/05/31 16:04:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "companies/index".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('companies/index')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\labs\tlocontact\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/labs/tlocontact/index.php/companies/index
+HTTP_REFERER=http://localhost/labs/tlocontact/index.php/site/index
+---
+2012/05/31 16:18:50 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\labs\tlocontact\protected\views\site\index.php:22)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\xampp\htdocs\labs\tlocontact\protected\controllers\SiteController.php(35): SiteController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\labs\tlocontact\index.php(13): CWebApplication->run()
+REQUEST_URI=/labs/tlocontact/index.php/site/index
+in C:\xampp\htdocs\labs\tlocontact\protected\views\site\index.php (22)
+in C:\xampp\htdocs\labs\tlocontact\protected\controllers\SiteController.php (35)
+in C:\xampp\htdocs\labs\tlocontact\index.php (13)
+2012/05/31 16:20:51 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\labs\tlocontact\protected\views\site\index.php:22)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\xampp\htdocs\labs\tlocontact\protected\controllers\SiteController.php(35): SiteController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\labs\tlocontact\index.php(13): CWebApplication->run()
+REQUEST_URI=/labs/tlocontact/index.php/site/index
+in C:\xampp\htdocs\labs\tlocontact\protected\views\site\index.php (22)
+in C:\xampp\htdocs\labs\tlocontact\protected\controllers\SiteController.php (35)
+in C:\xampp\htdocs\labs\tlocontact\index.php (13)
+2012/05/31 16:35:41 [error] [php] include(Contacts.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\xampp\htdocs\yii\framework\YiiBase.php:418)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(378): spl_autoload_call()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(219): model()
+#2 C:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(49): CActiveFinder->buildJoinTree()
+#3 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(268): CActiveFinder->__construct()
+#4 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(142): Company->getRelated()
+#5 C:\xampp\htdocs\labs\tlocontact\protected\views\company\index.php(29): Company->__get()
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require()
+#7 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CompanyController->renderInternal()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(870): CompanyController->renderFile()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(783): CompanyController->renderPartial()
+#10 C:\xampp\htdocs\labs\tlocontact\protected\controllers\CompanyController.php(133): CompanyController->render()
+#11 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): CompanyController->actionIndex()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CompanyController->runAction()
+#14 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#16 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CompanyController->filterAccessControl()
+#17 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(266): CompanyController->runActionWithFilters()
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CompanyController->run()
+#21 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#22 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\labs\tlocontact\index.php(13): CWebApplication->run()
+REQUEST_URI=/labs/tlocontact/index.php/company/index
+in C:\xampp\htdocs\labs\tlocontact\protected\views\company\index.php (29)
+in C:\xampp\htdocs\labs\tlocontact\protected\controllers\CompanyController.php (133)
+in C:\xampp\htdocs\labs\tlocontact\index.php (13)
+2012/05/31 16:39:03 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\labs\tlocontact\protected\views\contact\index.php:30)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(870): ContactController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(783): ContactController->renderPartial()
+#2 C:\xampp\htdocs\labs\tlocontact\protected\controllers\ContactController.php(133): ContactController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): ContactController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): ContactController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): ContactController->filterAccessControl()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(266): ContactController->runActionWithFilters()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): ContactController->run()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\labs\tlocontact\index.php(13): CWebApplication->run()
+REQUEST_URI=/labs/tlocontact/index.php/contact/index
+in C:\xampp\htdocs\labs\tlocontact\protected\views\contact\index.php (30)
+in C:\xampp\htdocs\labs\tlocontact\protected\controllers\ContactController.php (133)
+in C:\xampp\htdocs\labs\tlocontact\index.php (13)
+2012/05/31 17:51:05 [error] [php] Undefined variable: scriptUrl (C:\xampp\htdocs\labs\tlocontact\protected\views\site\index.php:27)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\xampp\htdocs\labs\tlocontact\protected\controllers\SiteController.php(41): SiteController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\labs\tlocontact\index.php(13): CWebApplication->run()
+REQUEST_URI=/labs/tlocontact/index.php/site/index
+in C:\xampp\htdocs\labs\tlocontact\protected\views\site\index.php (27)
+in C:\xampp\htdocs\labs\tlocontact\protected\controllers\SiteController.php (41)
+in C:\xampp\htdocs\labs\tlocontact\index.php (13)
+2012/05/31 17:55:14 [error] [php] Undefined variable: data (C:\xampp\htdocs\labs\tlocontact\protected\views\site\index.php:32)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\xampp\htdocs\labs\tlocontact\protected\controllers\SiteController.php(41): SiteController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\labs\tlocontact\index.php(13): CWebApplication->run()
+REQUEST_URI=/labs/tlocontact/index.php/site/index
+in C:\xampp\htdocs\labs\tlocontact\protected\views\site\index.php (32)
+in C:\xampp\htdocs\labs\tlocontact\protected\controllers\SiteController.php (41)
+in C:\xampp\htdocs\labs\tlocontact\index.php (13)
+2012/05/31 18:02:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "id".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('id')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('id')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('contact/id')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\labs\tlocontact\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/labs/tlocontact/index.php/contact/id/1
+HTTP_REFERER=http://localhost/labs/tlocontact/index.php/site/index
+---
+2012/05/31 18:07:22 [error] [php] Undefined variable: contact (C:\xampp\htdocs\labs\tlocontact\protected\views\company\index.php:30)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(870): CompanyController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(783): CompanyController->renderPartial()
+#2 C:\xampp\htdocs\labs\tlocontact\protected\controllers\CompanyController.php(133): CompanyController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): CompanyController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CompanyController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CompanyController->filterAccessControl()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(266): CompanyController->runActionWithFilters()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CompanyController->run()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\labs\tlocontact\index.php(13): CWebApplication->run()
+REQUEST_URI=/labs/tlocontact/index.php/company/index
+in C:\xampp\htdocs\labs\tlocontact\protected\views\company\index.php (30)
+in C:\xampp\htdocs\labs\tlocontact\protected\controllers\CompanyController.php (133)
+in C:\xampp\htdocs\labs\tlocontact\index.php (13)
+2012/05/31 19:36:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\labs\tlocontact\protected\controllers\CompanyController.php:160
+Stack trace:
+#0 C:\xampp\htdocs\labs\tlocontact\protected\controllers\CompanyController.php(54): CompanyController->loadModel('4')
+#1 [internal function]: CompanyController->actionView('4')
+#2 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(CompanyController), Array)
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(CompanyController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('company/view')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\labs\tlocontact\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/labs/tlocontact/index.php/company/4
+HTTP_REFERER=http://localhost/labs/tlocontact/index.php/contact/index
+---
+2012/05/31 19:36:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\labs\tlocontact\protected\controllers\CompanyController.php:160
+Stack trace:
+#0 C:\xampp\htdocs\labs\tlocontact\protected\controllers\CompanyController.php(54): CompanyController->loadModel('7')
+#1 [internal function]: CompanyController->actionView('7')
+#2 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(CompanyController), Array)
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(CompanyController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('company/view')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\labs\tlocontact\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/labs/tlocontact/index.php/company/7
+HTTP_REFERER=http://localhost/labs/tlocontact/index.php/contact/index
+---
+2012/05/31 19:37:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\labs\tlocontact\protected\controllers\CompanyController.php:160
+Stack trace:
+#0 C:\xampp\htdocs\labs\tlocontact\protected\controllers\CompanyController.php(54): CompanyController->loadModel('3')
+#1 [internal function]: CompanyController->actionView('3')
+#2 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(CompanyController), Array)
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(CompanyController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('company/view')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\labs\tlocontact\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/labs/tlocontact/index.php/company/3
+HTTP_REFERER=http://localhost/labs/tlocontact/index.php/contact/index
+---
+2012/05/31 19:44:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\labs\tlocontact\protected\controllers\CompanyController.php:160
+Stack trace:
+#0 C:\xampp\htdocs\labs\tlocontact\protected\controllers\CompanyController.php(54): CompanyController->loadModel('6')
+#1 [internal function]: CompanyController->actionView('6')
+#2 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(CompanyController), Array)
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(CompanyController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('company/view')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\labs\tlocontact\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/labs/tlocontact/index.php/company/6
+HTTP_REFERER=http://localhost/labs/tlocontact/index.php/contact/index
+---
+2012/05/31 20:18:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "3".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('3')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('3')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('contact/3/Fkaba...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\labs\tlocontact\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/labs/tlocontact/index.php/contact/3/Fkabalweg
+---
+2012/05/31 20:43:49 [error] [exception.CException] exception 'CException' with message 'Company and its behaviors do not have a method or closure named "url".' in C:\xampp\htdocs\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(226): CComponent->__call('url', Array)
+#1 C:\xampp\htdocs\labs\tlocontact\protected\views\company\index.php(31): CActiveRecord->__call('url', Array)
+#2 C:\xampp\htdocs\labs\tlocontact\protected\views\company\index.php(31): Company->url()
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#7 C:\xampp\htdocs\labs\tlocontact\protected\controllers\CompanyController.php(133): CController->render('index', Array)
+#8 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): CompanyController->actionIndex()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('index')
+#18 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('company/index')
+#19 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\labs\tlocontact\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/labs/tlocontact/index.php/company/index
+HTTP_REFERER=http://localhost/labs/tlocontact/index.php
+---
+2012/05/31 21:55:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('site')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('site')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/site')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\labs\tlocontact\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/labs/tlocontact/index.php/site/site
+HTTP_REFERER=http://localhost/labs/tlocontact/index.php/site/index
+---
+2012/05/31 21:55:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('site')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('site')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/site')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\labs\tlocontact\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/labs/tlocontact/index.php/site/site
+HTTP_REFERER=http://localhost/labs/tlocontact/index.php/site/index
+---
+2012/05/31 21:56:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "labs/tlocontact".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('labs/tlocontact')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\labs\tlocontact\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/labs/tlocontact/index.php/labs/tlocontact
+HTTP_REFERER=http://localhost/labs/tlocontact/index.php/
+---
+2012/05/31 21:56:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "labs/tlocontact".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('labs/tlocontact')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\labs\tlocontact\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/labs/tlocontact/index.php/labs/tlocontact
+HTTP_REFERER=http://localhost/labs/tlocontact/index.php/labs/tlocontact
+---
+2012/05/31 21:56:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "labs/tlocontact".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('labs/tlocontact')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\labs\tlocontact\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/labs/tlocontact/index.php/labs/tlocontact
+HTTP_REFERER=http://localhost/labs/tlocontact/index.php
+---
+2012/05/31 21:56:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "labs/tlocontact".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('labs/tlocontact')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\labs\tlocontact\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/labs/tlocontact/index.php/labs/tlocontact
+---
+2012/05/31 21:57:52 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('contact/view')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\labs\tlocontact\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/labs/tlocontact/index.php/contact/view
+HTTP_REFERER=http://localhost/labs/tlocontact/index.php/contact/1
+---
+2012/05/31 22:25:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\labs\tlocontact\protected\controllers\ContactController.php:160
+Stack trace:
+#0 C:\xampp\htdocs\labs\tlocontact\protected\controllers\ContactController.php(54): ContactController->loadModel('72')
+#1 [internal function]: ContactController->actionView('72')
+#2 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(ContactController), Array)
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(ContactController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('contact/view')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\labs\tlocontact\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/labs/tlocontact/index.php/contact/72
+---

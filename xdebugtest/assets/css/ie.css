@@ -1,0 +1,8 @@
+input.button, a.button{
+    border-left: none;
+    border-right: none;
+}
+input.button:hover, a.button:hover{
+    border-left: none;
+    border-right: none;
+}
